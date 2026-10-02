@@ -1,0 +1,6 @@
+sample_id	donor_id	condition	modality	batch	sex	age	bmi	hba1c
+donor01_sc	donor01	ND	scRNA	batch1	F	32	23.1	5.2
+donor01_sn	donor01	ND	snRNA	batch1	F	32	23.1	5.2
+donor02_sc	donor02	T2D	scRNA	batch2	M	58	29.8	7.4
+donor02_sn	donor02	T2D	snRNA	batch2	M	58	29.8	7.4
+
