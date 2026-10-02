@@ -24,6 +24,8 @@ make validate
 
 最小环境：R 4.3 或更高版本（Seurat、Matrix、yaml）；Python 3.10 或更高版本（scanpy、scvelo、anndata、pandas、matplotlib）。10x 数据建议先用 Cell Ranger 生成矩阵；snRNA-seq 需要把 intronic reads 纳入计数；RNA velocity 需要由 velocyto 生成 GRCh38 对应的 loom 文件。
 
+可先运行 R/install_packages.R 安装核心 R 依赖，或用 environment.yml 创建 Python 环境。DoubletFinder、escape、monocle3、Signac 和 velocyto 建议按各自上游文档安装并把版本写入 provenance.tsv。
+
 ## 目录
 
 | 路径 | 用途 |
@@ -66,4 +68,3 @@ Seurat 质控/整合 -> alpha/beta 亚群 -> velocyto + scVelo -> PAGA
 ## 许可证
 
 模板和代码按 MIT 许可发布；论文内容只做带来源的事实性摘要。使用具体蓝图时请同时引用原论文、原作者代码和数据集。
-
