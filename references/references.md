@@ -6,9 +6,9 @@
 
 ## 数据
 
-- GSE217837：本研究生成的 scRNA-seq/snRNA-seq 原始 reads。
+- GSE217837：本研究生成的 scRNA-seq/snRNA-seq 原始 reads：https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217837
 - HPAP/HIRN：13 位 ND 和 13 位 T2D 成人胰岛外部 scRNA-seq 入口：https://hpap.pmacs.upenn.edu/
-- GSE199636：公开人胰岛 snRNA/snATAC multiome 数据。
+- GSE199636：公开人胰岛 snRNA/snATAC multiome 数据：https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199636
 
 ## 原作者代码
 
@@ -25,4 +25,3 @@
 - scVelo：https://scvelo.readthedocs.io/
 - Monocle3：https://cole-trapnell-lab.github.io/monocle3/
 - Signac：https://stuartlab.org/signac/
-
