@@ -1,0 +1,15 @@
+name: bioinformatics-analysis-blueprints
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - scanpy
+  - scvelo
+  - anndata
+  - pandas
+  - matplotlib
+  - pip
+  - pip:
+      - loompy
+
