@@ -1,0 +1,42 @@
+blueprint_id: BP-001
+species: Homo sapiens
+tissue: pancreatic_islet
+reference_genome: GRCh38
+seurat:
+  min_counts: 500
+  min_features: 250
+  min_log10_genes_per_umi: 0.8
+  max_mito_fraction: 0.2
+  louvain_resolution: 0.8
+  sct_nfeatures: 3000
+soupX:
+  enabled: true
+  contamination_fraction: 0.2
+doubletFinder:
+  enabled: true
+  pcs: 1:20
+  pN: 0.25
+  pK: 0.09
+  expected_rate: 0.1
+alpha_markers:
+  GCG: high
+  CRYBA2: high
+  PCSK2: high
+  TTR: high
+beta_markers:
+  INS: high
+  IAPP: high
+trajectory:
+  velocity_model: stochastic
+  root_nd: AB
+  root_t2d: beta1
+  min_cells_for_state: 10
+  commonality_trajectories:
+    - beta3_to_alpha2
+    - AB_to_alpha2
+    - alpha3_to_alpha2
+data:
+  primary_geo: GSE217837
+  external_hpap: HPAP-HIRN
+  multiome_geo: GSE199636
+

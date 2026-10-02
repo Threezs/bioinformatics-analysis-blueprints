@@ -1,0 +1,12 @@
+results/
+data/tenx/
+data/velocity/
+*.rds
+*.h5ad
+*.loom
+*.h5
+__pycache__/
+.Rhistory
+.Rproj.user/
+renv/library/
+renv/staging/

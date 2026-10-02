@@ -1,0 +1,3 @@
+blueprint_id,title,doi,year,organism,tissue,modalities,primary_language,status,primary_data,external_data,code_repo
+BP-001,"Human pancreatic alpha-cell heterogeneity and trajectory inference analyses reveal SMOC1 as a beta-cell dedifferentiation gene",10.1038/s41467-025-62670-5,2025,Homo sapiens,pancreatic_islet,"scRNA-seq;snRNA-seq;snATAC-seq",R,active,GSE217837,HPAP-HIRN;GSE199636,https://github.com/randystyle21/Alpha_cell_SMOC1
+

@@ -1,0 +1,26 @@
+id: BP-XXX
+title: ""
+doi: ""
+year: 0
+organism: ""
+tissue: ""
+modalities: []
+question: ""
+input_contract: []
+stages: []
+outputs: []
+quality_gates: []
+evidence_levels:
+  - descriptive
+  - association
+  - trajectory
+  - external_replication
+  - perturbation
+primary_language: R
+secondary_language: Python
+data_access:
+  accessions: []
+  restrictions: ""
+code_repositories: []
+status: draft
+

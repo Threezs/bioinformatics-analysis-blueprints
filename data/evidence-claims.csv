@@ -1,0 +1,7 @@
+blueprint_id,claim_id,claim,evidence_level,source,replication_action,caveat
+BP-001,C01,"Five alpha-cell transcriptomic states are resolved in the reference",descriptive,Nature Communications Fig. 1,"Repeat marker table and donor composition summary","State names and resolution are dataset-specific"
+BP-001,C02,"AB cells can sit at a bifurcation toward alpha and beta states in ND data",trajectory,Nature Communications Fig. 3,"Compare scRNA-only, snRNA-only and integrated PAGA","PAGA and velocity are model-based"
+BP-001,C03,"Ten genes are common to three trajectories toward alpha states",trajectory,Nature Communications Fig. 4,"Bootstrap by donor and recompute intersections","Non-zero expression is not a causal test"
+BP-001,C04,"SMOC1 appears in beta cells in T2D HPAP data and is inversely related to INS",external_replication,Nature Communications Fig. 6,"Use donor-aware correlation and label-transfer confusion matrix","Age, BMI, HbA1c and sample processing differ"
+BP-001,C05,"SMOC1 perturbation changes beta-cell identity/function readouts",perturbation,Nature Communications Figs. 7-8,"Keep experimental validation separate from the computational blueprint","Overexpression and recombinant-protein effects are context-specific"
+
