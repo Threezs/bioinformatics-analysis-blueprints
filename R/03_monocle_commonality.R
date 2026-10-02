@@ -15,8 +15,9 @@ obj <- readRDS(rds_path)
 meta <- read.delim(velocity_path, stringsAsFactors = FALSE, check.names = FALSE)
 meta <- meta[match(colnames(obj), meta$cell_id), , drop = FALSE]
 if (anyNA(meta$cell_id)) stop("Velocity metadata does not cover every Seurat barcode.")
+rownames(meta) <- meta$cell_id
 counts <- GetAssayData(obj, assay = "RNA", slot = "counts")
-cds <- new_cell_data_set(counts, cell_metadata = cbind(data.frame(cell_id = colnames(obj)), meta), gene_metadata = data.frame(gene_short_name = rownames(counts), row.names = rownames(counts)))
+cds <- new_cell_data_set(counts, cell_metadata = meta, gene_metadata = data.frame(gene_short_name = rownames(counts), row.names = rownames(counts)))
 cds <- preprocess_cds(cds, num_dim = 50)
 cds <- reduce_dimension(cds, reduction_method = "UMAP")
 cds <- cluster_cells(cds)
@@ -31,4 +32,3 @@ write.table(as.data.frame(tests), file.path(out_dir, "monocle_graph_test.tsv"), 
 write.table(as.data.frame(colData(cds)), file.path(out_dir, "pseudotime_metadata.tsv"), sep = "\t", quote = FALSE, row.names = FALSE)
 saveRDS(cds, file.path(out_dir, "monocle3_cds.rds"))
 message("Graph test complete; compute intersections only after donor-aware sensitivity checks.")
-
